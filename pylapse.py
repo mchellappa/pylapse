@@ -82,7 +82,8 @@ def start_timelapse(fps,video_time,event_duration,cam_idx,height,width,output_di
 
             
     #After finishing the capture loop we can start creating the timelapse
-    os.system('ffmpeg -framerate %d -i %s -c:v libx264 -r 20 -pix_fmt yuv420p %s/%d.mp4' % (fps,image_name_format,output_dir,int(time.time())))
+    #os.system('ffmpeg -framerate %d -i %s -c:v libx264 -r 20 -pix_fmt yuv420p %s/%d.mp4' % (fps,image_name_format,output_dir,int(time.time())))
+    #Using WIndows movie maker to create the video
 
 def preview_cam(cam_idx,height,width):
     cam = init_cam(cam_idx,width,height)

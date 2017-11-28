@@ -43,5 +43,5 @@ Options:
 notes:
 - for now it uses opencv to get the images from the camera
 - Please copy opencv from source forge and copy cv2 to python folder. It is supported only on python2x
-
-
+- Please use "create_video.py -ext JPG -o output.mp4" to create the video (Other codecs in fourcc does not work and this is the one which worked on my windows machine)
+- Select the default option in the window to generate a compressed file
